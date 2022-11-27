@@ -1,5 +1,6 @@
 #Assignment 4 
 
+To run this tool run the duplex file
  
 
 ------------------------- Analysis of the use case-------------------------------
@@ -37,17 +38,11 @@ The purpose of the BIM tool is to assist the following stakeholders:
  
 
 -----------------3B: Propose a design for a tool / workflow-------------------------- 
-
-**See attached picture (BPMN_ProcessTree.svg) of the BPMN file located in folder (img) 
-
  
 
 User workflow: 
 
-The costumer uploads the BIM project as an IFC file to model folder (at the moment we don’t have the knowledge to do this, but we would like to 
-make further research also covering security issues with running a script through 
-a browser).  
-
+The costumer uploads the BIM project as an IFC to the model folder.
  
 
 Background processes for the tool: 
@@ -55,8 +50,7 @@ Background processes for the tool:
 Then a IFC file is uploaded to the website, the python script will automatically 
 run IFCOpenShell and extract the relevant data from the BIM model and output a list 
 of all room types and the area of each room in the python console. 
-The script links 
-each room to the corresponding area, which makes it possible to calculate the total 
+The script links each room to the corresponding area, which makes it possible to calculate the total 
 area of the building. The total area is used to determine the building type 
 (residential or non-residential). 
 
@@ -87,8 +81,8 @@ requirements for the building.
 
 We are assuming the shape of the duct to be rectangular and an airflow to 2.5 m/s.  
 
-We are furthermore assuming that all building above 200 m^2 are non-residential and 
-all building below 200 m^2 are residential, since the ventilation requirements differs 
+We are furthermore assuming that all building above 400 m^2 are non-residential and 
+all building below 400 m^2 are residential, since the ventilation requirements differs 
 depending on whether the building is residential or not. We are aware that this 
 assumption will lead to all apartment buildings being wrongly defined as non-residential 
 due to the total floor area.  
@@ -101,7 +95,7 @@ The use case manages the following data inputs:
 
 - The price of relevant products as an Excel sheet (from the product manufacturer) 
 
-- DS/EN 13779 and 13142 requirements 
+- DS/EN 13779 and 13142 requirements which are made as an Excel sheet
 
 - A BIM model in IFC format 
 
